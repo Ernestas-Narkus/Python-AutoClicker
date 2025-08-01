@@ -1,15 +1,21 @@
 import pyautogui
 import keyboard
 import time
+import PySimpleGUI
 
 # python -i "$(FULL_CURRENT_PATH)"
 
+# int position_x
+# int position_y
+# return position_x, position_y
 def get_pos():
     position_x, position_y = pyautogui.position()
     return position_x, position_y
     
+
 def amountToClick(x, y):
     pyautogui.click(x,y)
+
 
 def main():
     run = True
